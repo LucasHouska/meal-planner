@@ -26,14 +26,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: List build directory contents
-        run: ls -la dist
-
-      - name: Display index.html content
-        run: cat ./dist/index.html
-
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+        run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
