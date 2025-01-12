@@ -41,11 +41,11 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-        - name: Download artifacts
+      - name: Download artifacts
         uses: actions/download-artifact@v2
         with:
           name: production-files
-          name: ./dist
+          path: ./dist
 
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3
