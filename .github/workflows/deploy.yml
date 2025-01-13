@@ -15,9 +15,9 @@ jobs:
       - name: pwd
         run: pwd
       - name: ls
-        run: ls
+        run: ls dist
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ../dist
+          publish_dir: dist
