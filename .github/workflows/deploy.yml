@@ -14,8 +14,8 @@ jobs:
         run: npm run build
       - name: pwd
         run: pwd
-      - name: ls
-        run: ls dist
+      - name: List files
+        run: ls -la /home/runner/work/meal-planner/meal-planner/dist
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
