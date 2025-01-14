@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import MenuFade from "./Menu";
 
 const Header = () => {
   return (
     <header>
-        <MenuFade />
       <nav>
         <ul>
           <li>

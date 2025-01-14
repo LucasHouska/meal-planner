@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home"
+import Meal from "./components/Meal"
 import './App.css'
 import Header from "./components/Header";
 
@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/meal" element={<Home />} />
+          <Route path="/meal" element={<Meal />} />
         </Routes>
       </Router>
     </>
